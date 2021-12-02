@@ -1,0 +1,25 @@
+package com.company;
+
+
+public class Main {
+
+    public static void main(String[] args) {
+        int max = 14;
+        for(int i = 0; i < max; i++)
+        //for (int i = max - 1; i >= 0; i--) this makes it go upside down
+        {
+            for (int w = 0; w < max - i - 1; w++) {
+                System.out.print(" ");
+            }
+            for (int y = 0; y < i + 1; y++) {
+                System.out.print(" ");
+
+            }
+            for (int y = 0; y < i + 1; y++) {
+                System.out.print("#");
+            }
+            System.out.println(" ");
+        }
+
+        }
+}
